@@ -7,7 +7,7 @@
 
 # Site settings
 title:       고유성의 기술블로그
-email:       ''
+email:       'koys0818@naver.com
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         'https://koys0818.github.io/blog/' # The base hostname & protocol for your site
