@@ -1,0 +1,14 @@
+---
+layout: post
+title: git command
+tags: [frontpage, jekyll, blog]
+---
+git 명령어
+git status
+~~~
+파일의 상태 확인하기
+status를 사용하면 파일이 수정되었는지 아닌지를 확인할수있다
+Tracked나 Modified 상태는 파일이 없다는 의미이고, Untracked 파일은 아직 없어서 목록에 나타나지 않는다
+~~~
+    
+
