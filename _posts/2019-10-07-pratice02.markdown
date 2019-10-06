@@ -1,0 +1,378 @@
+---
+layout: post
+title: java pratice 02
+tags: [frontpage, jekyll, blog]
+image: ''
+---
+~~~
+pro01
+package Lecture20190825;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro01 {
+public static void main(String[] args) {
+Random random = new Random();
+System.out.println("게임을 시작 하시겠습니까? ) 1.예 ) 2.아니요");
+Scanner scan = new Scanner(System.in);
+int a;
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("예, 매칭을 시작하겠습니다.\n게임이 매칭되었습니다");
+}
+else
+{
+System.out.println("게임을 종료합니다");
+System.exit(0);
+}
+int b;
+b = (int)(Math.random() * 5 +1);
+if(b == 1)
+{
+System.out.println("페이커님의 포지션은 탑 입니다.");
+}
+if(b == 2)
+{
+System.out.println("페이커님의 포지션은 정글 입니다.");
+}if(b == 3)
+{
+System.out.println("페이커님의 포지션은 미드 입니다.");
+}if(b == 4)
+{
+System.out.println("페이커님의 포지션은 원딜 입니다.");
+}if(b == 5)
+{
+System.out.println("페이커님의 포지션은 서폿 입니다.");
+}
+// TODO Auto-generated method stub
+}
+}
+pro02
+package Lecture20190825;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro02 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("게임을 선택해 주세요\n1.일반게임\n2.랭크게임\n3.우르프\n4.AI\n5.단일챔피언");
+int a;
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("일반게임을 선택했습니다 일반게임을 매칭합니다……");
+}
+if(a == 2)
+{
+System.out.println("랭크게임을 선택했습니다 랭크게임을 매칭합니다……");
+}
+if(a == 3)
+{
+System.out.println("우르프를 선택했습니다 우르프를 매칭합니다……");
+}
+if(a == 4)
+{
+System.out.println("AI를 선택했습니다 AI를 매칭합니다……");
+}
+if(a == 5)
+{
+System.out.println("단일챔피언을 선택했습니다 단일챔피언을 매칭합니다……");
+}
+String names[] = { "탑",
+"정글",
+"미드",
+"원딜",
+"서폿",};
+int x;
+x = (int)(Math.random() * 5 +1);
+System.out.println("페이커님의 포지션은 "+names[x]+"입니다");
+// TODO Auto-generated method stub
+}
+}
+pro03
+package Lecture20190825;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro03 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("파티원의 수를 정해주세요 :");
+int b;
+b = scan.nextInt();
+System.out.println("게임을 선택해 주세요\n1.일반게임\n2.랭크게임\n3.우르프\n4.AI\n5.단일챔피언");
+int a;
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("일반게임을 선택했습니다 일반게임을 매칭합니다……");
+}
+if(a == 2)
+{
+System.out.println("랭크게임을 선택했습니다 랭크게임을 매칭합니다……");
+}
+if(a == 3)
+{
+System.out.println("우르프를 선택했습니다 우르프를 매칭합니다……");
+}
+if(a == 4)
+{
+System.out.println("AI를 선택했습니다 AI를 매칭합니다……");
+}
+if(a == 5)
+{
+System.out.println("단일챔피언을 선택했습니다 단일챔피언을 매칭합니다……");
+}
+int c;
+c = (int)(Math.random() * 2 +1);
+if(c == 1)
+{
+System.out.println("팀진영은 블루팀입니다");
+}
+if(c == 2)
+{
+System.out.println("팀진영은 레드팀입니다");
+}
+String names[] = { "탑",
+"정글",
+"미드",
+"원딜",
+"서폿",};
+int x;
+int y;
+x = (int)(Math.random() * 4 +1);
+System.out.println("페이커님의 포지션은 "+names[x]+"입니다");
+int i,j;
+for(i=1;i<b+1;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("파티원"+i+"의 포지션은"+names[y]);
+}
+for(i=1;i<5-b;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("외부인"+i+"의 포지션은"+names[y]);
+}
+// TODO Auto-generated method stub
+}
+}
+pro04
+package Lecture20190825;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro04 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("파티원의 수를 정해주세요 :");
+int b;
+b = scan.nextInt();
+System.out.println("게임을 선택해 주세요\n1.일반게임\n2.랭크게임\n3.우르프\n4.AI\n5.단일챔피언");
+int a;
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("일반게임을 선택했습니다 일반게임을 매칭합니다……");
+}
+if(a == 2)
+{
+System.out.println("랭크게임을 선택했습니다 랭크게임을 매칭합니다……");
+}
+if(a == 3)
+{
+System.out.println("우르프를 선택했습니다 우르프를 매칭합니다……");
+}
+if(a == 4)
+{
+System.out.println("AI를 선택했습니다 AI를 매칭합니다……");
+}
+if(a == 5)
+{
+System.out.println("단일챔피언을 선택했습니다 단일챔피언을 매칭합니다……");
+}
+try {
+System.out.println("….누군가 게임을 취소해 다시 매칭을 시작합니다.");
+Thread.sleep(4000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+int c;
+c = (int)(Math.random() * 2 +1);
+if(c == 1)
+{
+System.out.println("팀진영은 블루팀입니다");
+}
+if(c == 2)
+{
+System.out.println("팀진영은 레드팀입니다");
+}
+String names[] = { "탑",
+"정글",
+"미드",
+"원딜",
+"서폿",};
+int x;
+int y;
+x = (int)(Math.random() * 4 +1);
+System.out.println("페이커님의 포지션은 "+names[x]+"입니다");
+int i,j;
+for(i=1;i<b+1;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("파티원"+i+"의 포지션은"+names[y]);
+}
+for(i=1;i<5-b;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("외부인"+i+"의 포지션은"+names[y]);
+}
+// TODO Auto-generated method stub
+}
+}
+pro05
+package Lecture20190825;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro05 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("파티원의 수를 정해주세요 :");
+int b;
+b = scan.nextInt();
+System.out.println("게임을 선택해 주세요\n1.일반게임\n2.랭크게임\n3.우르프\n4.AI\n5.단일챔피언");
+int a;
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("일반게임을 선택했습니다 일반게임을 매칭합니다……");
+}
+if(a == 2)
+{
+System.out.println("랭크게임을 선택했습니다 랭크게임을 매칭합니다……");
+}
+if(a == 3)
+{
+System.out.println("우르프를 선택했습니다 우르프를 매칭합니다……");
+}
+if(a == 4)
+{
+System.out.println("AI를 선택했습니다 AI를 매칭합니다……");
+}
+if(a == 5)
+{
+System.out.println("단일챔피언을 선택했습니다 단일챔피언을 매칭합니다……");
+}
+System.out.println("…우리 파티원이 게임을 취소했습니다 ……");
+System.out.println("파티원의 수를 정해주세요 :");
+b = scan.nextInt();
+System.out.println("게임을 선택해 주세요\n1.일반게임\n2.랭크게임\n3.우르프\n4.AI\n5.단일챔피언");
+a = scan.nextInt();
+if(a == 1)
+{
+System.out.println("일반게임을 선택했습니다 일반게임을 매칭합니다……");
+}
+if(a == 2)
+{
+System.out.println("랭크게임을 선택했습니다 랭크게임을 매칭합니다……");
+}
+if(a == 3)
+{
+System.out.println("우르프를 선택했습니다 우르프를 매칭합니다……");
+}
+if(a == 4)
+{
+System.out.println("AI를 선택했습니다 AI를 매칭합니다……");
+}
+if(a == 5)
+{
+System.out.println("단일챔피언을 선택했습니다 단일챔피언을 매칭합니다……");
+}
+try {
+System.out.println("….누군가 게임을 취소해 다시 매칭을 시작합니다.");
+Thread.sleep(4000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+int c;
+c = (int)(Math.random() * 2 +1);
+if(c == 1)
+{
+System.out.println("팀진영은 블루팀입니다");
+}
+if(c == 2)
+{
+System.out.println("팀진영은 레드팀입니다");
+}
+String names[] = { "탑",
+"정글",
+"미드",
+"원딜",
+"서폿",};
+int x;
+int y;
+x = (int)(Math.random() * 4 +1);
+System.out.println("페이커님의 포지션은 "+names[x]+"입니다");
+int i,j;
+for(i=1;i<b+1;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("파티원"+i+"의 포지션은"+names[y]);
+}
+for(i=1;i<5-b;i++)
+{
+y = (int)(Math.random() * 4 +1);
+System.out.println("외부인"+i+"의 포지션은"+names[y]);
+}
+// TODO Auto-generated method stub
+}
+}
+pro06
+package Lecture20190825;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro06 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("소환사의 협곡에 오신것을 환영합니다\n페이커의 포지션은 미드이고 야스오를 선택했습니다\n페이커의 기본공격은 100입니다\n상대 캐릭터 탈론의 체력은 1000입니다\n페이커는 상대 탈론을 몇대를 때려야 잡을수있을까요?");
+System.out.println("아이템 리스트\n1. 도란검 공격력 5 가격 450");
+System.out.println("1. 도란링 공격력 1 가격 400");
+System.out.println("1. 도란방패 공격력 -10 가격 450");
+System.out.println("1. 신발 공격력 0 가격 300");
+System.out.println("아이템을 고르세요");
+int a = 0;
+int b;
+int c = 1000;
+int d = 0;
+b = scan.nextInt();
+if(b == 1)
+{
+a = 105;
+}
+if(b == 2)
+{
+a = 101;
+}
+if(b == 3)
+{
+a = 90;
+}
+if(b == 4)
+{
+a = 100;
+}
+while(c>0)
+{
+c = c - a;
+d++;
+System.out.print("\n공격을 시작합니다. 적에게 준 피해량 "+ a + " 탈론의 남은 체력 "+c);
+}
+System.out.print(" 탈론이 죽었습니다.");
+System.out.println();
+System.out.println(d+"번 공격하면 탈론을 쓰러트릴수있습니다");
+// TODO Auto-generated method stub
+}
+}
+~~~
