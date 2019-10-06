@@ -2,7 +2,6 @@
 layout: post
 title: lol simulation
 tags: [frontpage, jekyll, blog]
-image: ''
 ---
 
 package Lecture;
