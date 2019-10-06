@@ -1,0 +1,221 @@
+---
+layout: post
+title: java pratice 02
+tags: [frontpage, jekyll, blog]
+image: ''
+---
+~~~
+pro07
+
+
+package Lecture;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro07 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+System.out.println("대결을 시작합니까? 1.시작 2.탈주");
+int x;
+x = scan.nextInt();
+if(x == 2)
+{
+System.exit(0);
+}
+try {
+Thread.sleep(3000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+System.out.println("미니언이 생성되었습니다");
+int a ,b;
+int c = 0;
+a = 1000;
+b = 700;
+int z ,y;
+z = 120;
+y = 150;
+while(a >= 0 || b >= 0)
+{
+c = (int)(Math.random()*z+1);
+b = b - z+ c;
+System.out.println("코르키-> 제드 "+(z-c)+"의 피해 (코르키의 체력: "+a+", 제드의 체력 : "+b+")");
+c = (int)(Math.random()*y+1);
+a = a - y + c;
+System.out.println("제드-> 코르키 "+(y-c)+"의 피해 (코르키의 체력: "+a+", 제드의 체력 : "+b+")");
+if(a <= 0)
+{
+break;
+}
+if(b <= 0)
+{
+break;
+}
+}
+if(a <= 0)
+{
+System.out.println("제드 라인전 승리");
+}
+if(b <= 0)
+{
+System.out.println("코르키 라인전 승리");
+}
+// TODO Auto-generated method stub
+}
+}
+pro08
+package Lecture;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro08 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+if(x == 2)
+{
+System.exit(0);
+}
+try {
+Thread.sleep(3000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+System.out.println("미니언이 생성되었습니다");
+int a, b, c, d;
+int z, y;
+z = 90;
+y = 120;
+c = 40;
+d = 100;
+int e =0;
+a = 1000;
+b = 700;
+x = 0;
+while(a >= 0 || b >= 0)
+{
+x = (int)(Math.random()*z+1);
+b = b - z+ x;
+System.out.println("카시-> 탈론 "+(z-x)+"의 피해 (카시의 체력: "+a+", 탈론의 체력 : "+b+")");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e1) {
+e1.printStackTrace();
+}
+x = (int)(Math.random()*y+1);
+a = a - y + x;
+System.out.println("탈론-> 카시 "+(y-x)+"의 피해 (카시의 체력: "+a+", 탈론의 체력 : "+b+")");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e1) {
+e1.printStackTrace();
+}
+if(a <= 0)
+{
+break;
+}
+if(b <= 0)
+{
+break;
+}
+e++;
+if(e == 3)
+{
+x = (int)(Math.random()*d+1);
+a = a - d + x;
+System.out.println("마이 -> 카시 "+ (d-x) +"의 피해 (카시의 체력: "+a+", 탈론의 체력 : "+b+")");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e1) {
+e1.printStackTrace();
+}
+x = (int)(Math.random()*c+1);
+b = b - c + x;
+System.out.println("람머스 -> 탈론 "+ (c-x) +"의 피해 (카시의 체력: "+a+", 탈론의 체력 : "+b+")");
+try {
+Thread.sleep(1000);
+} catch (InterruptedException e1) {
+e1.printStackTrace();
+}
+e =0;
+}
+}
+if(a <= 0)
+{
+System.out.println("탈론 라인전 승리");
+}
+if(b <= 0)
+{
+System.out.println("카시 라인전 승리");
+}
+// TODO Auto-generated method stub
+}
+}
+pro09
+package Lecture;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro09 {
+public static void main(String[] args) {
+Random random = new Random();
+Scanner scan = new Scanner(System.in);
+int i;
+int x, y, z;
+y =0;
+z = 2;
+int a = 1;
+for(i=0;i<10;i++)
+{
+x = (int)(Math.random()*2+1);
+if(x == 1)
+{
+System.out.println("승");
+y++;
+}
+else
+{
+System.out.println("패");
+}
+if(y == 2)
+{
+z = z - 1;
+y = 0;
+}
+if(z == 0)
+{
+a++;
+z = 4;
+}
+}
+if(a == 1)
+{
+System.out.println("페이커의 티어는 아이언 "+z+"입니다");
+}
+if(a == 2)
+{
+System.out.println("페이커의 티어는 브론즈 "+z+"입니다");
+}
+if(a == 3)
+{
+System.out.println("페이커의 티어는 실버 "+z+"입니다");
+}
+if(a == 4)
+{
+System.out.println("페이커의 티어는 골드 "+z+"입니다");
+}
+if(a == 5)
+{
+System.out.println("페이커의 티어는 플레 "+z+"입니다");
+}
+if(a == 6)
+{
+System.out.println("페이커의 티어는 다이아 "+z+"입니다");
+}
+if(a == 1)
+{
+System.out.println("페이커의 티어는 마스터 "+z+"입니다");
+}
+System.out.println();
+// TODO Auto-generated method stub
+}
+}
+~~~
