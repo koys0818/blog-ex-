@@ -3,8 +3,9 @@ layout: post
 title: git command
 tags: [frontpage, jekyll, blog]
 ---
-git 명령어
-git status
+git 명령어    
+    
+git status    
 ~~~
 파일의 상태 확인하기
 status를 사용하면 파일이 수정되었는지 아닌지를 확인할수있다
