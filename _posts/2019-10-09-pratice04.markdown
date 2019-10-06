@@ -2,7 +2,7 @@
 layout: post
 title: java pratice 04
 tags: [frontpage, jekyll, blog]
-image: ''
+image: 'https://s.yimg.com/fz/api/res/1.2/5LFWuK5Wu3TdOGpfKB4QVA--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTM2MDtxPTgwO3c9NDYw/https://s.yimg.com/zb/imgv1/9f5a7ba1-97a0-3b4a-abfb-9af4a79edcbd/t_500x300'
 ---
 ~~~
 q01
