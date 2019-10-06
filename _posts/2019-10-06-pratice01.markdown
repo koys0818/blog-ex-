@@ -5,13 +5,13 @@ tags: [frontpage, jekyll, blog]
 image: ''
 ---
 
-pro1
-package lecture20190818;
-public class Pro1 {
-public static void main(String[] args) {
-String a = "100";
-String b = "200";
-int c = Integer.parseInt(a);
+pro1    
+package lecture20190818;    
+public class Pro1 {    
+public static void main(String[] args) {    
+String a = "100";    
+String b = "200";    
+int c = Integer.parseInt(a);    
 int d = Integer.parseInt(b);
 System.out.println(c);
 // TODO Auto-generated method stub
