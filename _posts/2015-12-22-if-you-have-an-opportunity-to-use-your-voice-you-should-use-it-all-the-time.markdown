@@ -1,31 +1,177 @@
 ---
 layout: post
-title: If you have an opportunity to use your voice you should use it all
+title: java pratice 01
 tags: [frontpage, jekyll, blog]
 image: '/images/posts/7.jpg'
 ---
 
-Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.
-
-Vix dico eius nominati cu, ex zril commodo fuisset mea. Habeo adhuc audiam ius no. In quis virtute officiis has. Vix ad honestatis accommodare, quis virtute et sit, pertinax expetenda eam id. Duo an fuisset delectus dissentias, justo altera ea per.
-
-##### Todo
-
-Duis id ante elit. Aliquam quis tellus id orci eleifend finibus. Donec consequat justo ligula, eget sodales purus hendrerit at.
-
-1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in, pellentesque vel urna.
-    Donec nibh massa, rutrum a sollicitudin eu,
-lacinia in lorem.
-
-##### Graphic design
-
-> Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana
-
-Vim te case nihil oblique, has partem interpretaris ne, ad admodum accusamus nam. Usu utinam dissentias referrentur ne, vim accusam voluptua pertinacia no. Est no posse utinam inermis, brute errem mentitum et ius, te prompta albucius quo. In pro simul soleat regione.
-
-![alt](https://images.unsplash.com/photo-1433785567155-bf5530cab72c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1348aea714b9493fa61a09a8c01113e6)
-
-Ne reque offendit singulis mea, ad eos ferri doming nostrud. Duis suscipit usu ut, fuisset pericula ex est, et porro prompta his. Audire definiebas voluptatibus et duo, aperiam ocurreret ad nec. Vel ad nostrud principes. Ad liber congue iracundia sed, eirmod erroribus eam te, has veniam epicurei ea.
-
-Pri probo alterum aliquando an. Duo appetere laboramus intellegat ea, ex suas diam exerci vix. Mel simul debitis id, est nusquam fuisset mentitum in. Te mei iudico iisque.
+pro1
+package lecture20190818;
+public class Pro1 {
+public static void main(String[] args) {
+String a = "100";
+String b = "200";
+int c = Integer.parseInt(a);
+int d = Integer.parseInt(b);
+System.out.println(c);
+// TODO Auto-generated method stub
+}
+}
+pro2
+package lecture20190818;
+public class Pro2 { 
+public static void main(String[] args) {
+int i;
+for(i=2;i<100;i=i+2)
+{
+System.out.println(i);
+}
+// TODO Auto-generated method stub
+}
+}
+pro3
+package lecture20190818;
+public class Pro3 {
+public static void main(String[] args) {
+int a = 65430;
+System.out.println("만원:"+a/10000 +" 천원:"+(a/1000)%10+" 백원:"+(a/100)%10+" 십원:"+(a/10)%10);
+// TODO Auto-generated method stub
+}
+}
+pro4
+package lecture20190818;
+public class Pro4 {
+public static void main(String[] args) {
+int a;
+a = 1500000 + 55000 - (1500000/10);
+// TODO Auto-generated method stub
+}
+}
+pro5
+package lecture20190818;
+public class Pro5 {
+public static void main(String[] args) {
+System.out.println("이름 : 이효리");
+System.out.printf("부서 : 개발부\n");
+System.out.print("직위 : 대리");
+// TODO Auto-generated method stub
+}
+}
+pro6
+package lecture20190818;
+public class Pro6 {
+public static void main(String[] args) {
+System.out.println("*\n**\n**\n**\n***");
+// TODO Auto-generated method stub
+}
+}
+pro7
+package lecture20190818;
+public class Pro7 {
+public static void main(String[] args) {
+System.out.println("이름 : 민들레\n합계점수 : 235점\n평균점수 78.3");
+// TODO Auto-generated method stub
+}
+}
+pro8
+package lecture20190818;
+import java.util.Scanner;
+public class Pro8 {
+private static Object scan;
+public static void main(String[] args) {
+int a, b;1
+Scanner scan = new Scanner(System.in);
+a = scan.nextInt();
+b = scan.nextInt();
+System.out.println((a*b)/2);
+// TODO Auto-generated method stub
+}
+}
+pro9
+package lecture20190818;
+import java.util.Scanner;
+public class Pro9 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int a;
+a = scan.nextInt();
+System.out.println((a+2000)*1.1);
+// TODO Auto-generated method stub
+}
+}
+pro10
+package lecture20190818;
+import java.util.Scanner;
+public class Pro10 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int a;
+a = scan.nextInt();
+System.out.println(a/100);
+System.out.println((a/10)%10);
+System.out.println(a%10);
+// TODO Auto-generated method stub
+}
+}
+pro11
+package lecture20190818;
+import java.util.Scanner;
+public class Pro11 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+double a = scan.nextDouble();
+double b = scan.nextDouble();
+System.out.println(a/(b*b));
+// TODO Auto-generated method stub
+}
+}
+pro12
+package lecture20190818;
+import java.util.Scanner;
+public class Pro12 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int a = scan.nextInt();
+if(a%4 == 0)
+{
+if(a%100 != 0 || a%400 == 0)
+{
+System.out.println("운년");
+}
+else
+{
+System.out.println("평년");
+}
+}
+else
+{
+System.out.println("평년");
+}
+// TODO Auto-generated method stub
+}
+}
+pro13
+package lecture20190818;
+import java.util.Random;
+import java.util.Scanner;
+public class Pro13 {
+public static void main(String[] args) {
+Scanner scan = new Scanner(System.in);
+int a = (int)(Math.random()*100);
+int b = 0;
+while(a != b)
+{
+b = scan.nextInt();
+if(a>b)
+{
+System.out.println("난수의 숫자가 더 큽니다");
+}
+if(a<b)
+{
+System.out.println("난수의 숫자가 더 작습니다");
+}
+}
+System.out.println("숫자를 맞쳤습니다");
+// TODO Auto-generated method stub
+}
+}
