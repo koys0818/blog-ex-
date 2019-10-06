@@ -4,7 +4,7 @@ title: java pratice 01
 tags: [frontpage, jekyll, blog]
 image: ''
 ---
-
+~~~
 pro1    
 package lecture20190818;    
 public class Pro1 {    
@@ -175,3 +175,4 @@ System.out.println("숫자를 맞쳤습니다");
 // TODO Auto-generated method stub
 }
 }
+~~~
