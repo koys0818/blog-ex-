@@ -2,7 +2,7 @@
 layout: post
 title: java pratice 01
 tags: [frontpage, jekyll, blog]
-image: '/images/posts/7.jpg'
+image: ''
 ---
 
 pro1
