@@ -6,10 +6,37 @@ tags: [frontpage, jekyll, blog]
 git 명령어    
     
 git status    
+
 ~~~
 파일의 상태 확인하기
 status를 사용하면 파일이 수정되었는지 아닌지를 확인할수있다
 Tracked나 Modified 상태는 파일이 없다는 의미이고, Untracked 파일은 아직 없어서 목록에 나타나지 않는다
 ~~~
-    
+
+git add 
+
+~~~
+git add <파일>
+새로운 파일을 추가하고  존재하는 파일을 스테이징하고 커밋한다
+
+git add -i
+수정된 파일의 변경사항을 스테이징한다
+
+git add -u [<경로> [<경로>]]
+수정된 모든 파일의 변경사항을 커밋한다
+~~~
+
+git commit
+
+~~~
+git commit -m “<메시지>”
+파일의 일부를 스테이징한다
+
+git commit -m "<메세지>" -a
+작업의 변경사항 되돌리기
+
+git commit -m “<메시지>” - -amend
+이전 커밋을 수정하고 메시지를 재사용하기
+~~~
+
 
