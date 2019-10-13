@@ -12,9 +12,9 @@ description: ''
 baseurl:     'https://koys0818.github.io/blog/' # The subpath of your site, e.g. /blog
 url:         'https://koys0818.github.io/blog/' # The base hostname & protocol for your site
 twitter:     ''
-github:      ''
+github:      'https://github.com/koys0818'
 instagram:   ''
-facebook:    ''
+facebook:    'https://www.facebook.com/profile.php?id=100010141545563'
 
 markdown:  kramdown
 permalink: pretty
